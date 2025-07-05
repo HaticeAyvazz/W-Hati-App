@@ -17,7 +17,10 @@ Bu uygulama, backend kısmında Java (Spring Boot) ile frontend kısmında ise H
 Ayrıca kullanıcı, "See Location" butonuna tıklayarak şehir konumunu harita üzerinde görüntüleyebilir.
 
 
+
+
 📚 Kullanılan Teknolojiler
+
 -Java 22
 
 -Spring Boot
@@ -27,7 +30,10 @@ Ayrıca kullanıcı, "See Location" butonuna tıklayarak şehir konumunu harita 
 -OpenWeatherMap API
 
 
+
+
 🔐 OpenWeatherMap API Key Nasıl Alınır?
+
 1-)https://openweathermap.org/api adresine gidin.
 
 2-)Ücretsiz bir hesap oluşturun.
