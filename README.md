@@ -1,5 +1,6 @@
-🌤️ Weather App
-Bu uygulama, Java (Spring Boot) arka ucu ile HTML, CSS ve JavaScript ön yüzü kullanılarak geliştirilmiş bir hava durumu uygulamasıdır. Kullanıcı, bir şehir adı girerek o şehirle ilgili:
+🌤️ W-Hati App
+
+Bu uygulama, backend kısmında Java (Spring Boot) ile frontend kısmında ise HTML, CSS ve JavaScript  kullanılarak geliştirilmiş bir hava durumu uygulamasıdır. Kullanıcı, bir şehir adı girerek o şehirle ilgili:
 
 -Güncel sıcaklık
 
@@ -37,3 +38,6 @@ Ayrıca kullanıcı, "See Location" butonuna tıklayarak şehir konumunu harita 
 
 
 <img width="1919" height="1020" alt="Image" src="https://github.com/user-attachments/assets/f3da7e5d-ebed-477c-b139-1f7edd4e32ee" />
+
+
+<img width="1919" height="1010" alt="Image" src="https://github.com/user-attachments/assets/1a4d9a83-3d06-47db-a440-84cf37340bdb" />
