@@ -1,4 +1,4 @@
-🌤️ W-Hati App
+# 🌤️ W-Hati App
 
 Bu uygulama, backend kısmında Java (Spring Boot) ile frontend kısmında ise HTML, CSS ve JavaScript  kullanılarak geliştirilmiş bir hava durumu uygulamasıdır. Kullanıcı, bir şehir adı girerek o şehirle ilgili:
 
@@ -16,10 +16,10 @@ Bu uygulama, backend kısmında Java (Spring Boot) ile frontend kısmında ise H
 
 Ayrıca kullanıcı, "See Location" butonuna tıklayarak şehir konumunu harita üzerinde görüntüleyebilir.
 
+---
 
 
-
-📚 Kullanılan Teknolojiler
+## 📚 Kullanılan Teknolojiler
 
 -Java 22
 
@@ -29,10 +29,10 @@ Ayrıca kullanıcı, "See Location" butonuna tıklayarak şehir konumunu harita 
 
 -OpenWeatherMap API
 
+---
 
 
-
-🔐 OpenWeatherMap API Key Nasıl Alınır?
+## 🔐 OpenWeatherMap API Key Nasıl Alınır?
 
 1-)https://openweathermap.org/api adresine gidin.
 
