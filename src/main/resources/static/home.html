@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="homestyle.css">
+    <title>W-Hati App</title>
+</head>
+<body>
+
+<div class="back">
+    <img src="backfoto.jpeg" class="back-picture">
+    <header>
+        <div class="title">
+            <h3>W-Hati App</h3>
+        </div>
+    </header>
+    <div class="box">
+        <div class="text">
+            <p>Current weather forecasts are at your fingertips with just one search!</p>
+        </div>
+        <div class="input-city">
+            <input type="text" id="city" class="city" placeholder="Enter a city name">
+        </div>
+        <div class="city-search">
+            <button onclick="getweatherr()" class="button">🔎Get Weather</button>
+        </div>
+    </div>
+    <div class="box" id="result">
+    </div>
+    <div class="extra-buttons">
+        <button type="button" id="seeLocationBtn">See Location</button>
+    </div>
+</div>
+
+<script>
+
+    let lastCityData=null;
+
+    function getweatherr() {
+        const city = document.getElementById("city").value;
+        fetch(`http://localhost:8080/api/weather/search?city=${encodeURIComponent(city)}`)
+            .then(res => {
+                if (!res.ok) throw new Error("Şehir bulunamadı");
+                return res.json();
+            })
+            .then(data => {
+                lastCityData=data;  //This data comes from the last search.
+                document.getElementById("result").innerHTML = `
+                <p><b> 🌇 City:</b> ${data.city}</p>
+                <p><b>🌡️ Temperature:</b> ${data.temp}°C</p>
+                <p><b>🤤 Feels Like:</b>${data.feels_like}</p>
+                <p><b>🧾 Situation:</b> ${data.desc}</p>
+                <p><b>🌀 Wind:</b>${data.wind}</p>
+                <p><b>💧 Humidity:</b>${data.humidity}</p>
+            `;
+            })
+            .catch(e => {
+                document.getElementById("result").innerText = e.message;
+                lastCityData=null;
+            });
+    }
+
+    //Click on the See Location button event
+    document.getElementById("seeLocationBtn").addEventListener("click",()=>{
+       if(lastCityData&&lastCityData.lat&&lastCityData.lon){
+           const url=`location.html?city=${encodeURIComponent(lastCityData.city)}&lat=${lastCityData.lat}&lon=${lastCityData.lon}`;
+           window.open(url,"_blank");
+       }
+       else{
+           alert("!!Please search any city first");
+       }
+    });
+</script>
+
+</body>
+</html>

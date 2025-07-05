@@ -1,0 +1,76 @@
+.back-picture{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.title h3{
+    width: 360px;
+    height: 35px;
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    margin-left: 610px;
+    margin-bottom: 60px;
+    padding-top: 15px;
+    background-color: #E2C4E3;
+    border: #ca7eca 4px solid;
+    font-size: 28px;
+}
+.box{
+    width: 650px;
+    height: 350px;
+    margin: 40px;
+    border-radius: 10px;
+    background-color: #E2C4E3;
+    border: #ca7eca 4px solid;
+    display: inline-block;
+    vertical-align: top;
+}
+.text {
+    width: 550px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 35px;
+    font-size: 20px;
+    background-color: #ddb5e6;
+    border-radius: 5px;
+    border: #ca7eca 2px solid;
+}
+.input-city .city{
+    width: 250px;
+    height: 40px;
+    margin-top:50px;
+    margin-left: 35px;
+    border: #ca7eca 2px solid;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #ddb5e6;
+}
+.city-search .button{
+    width: 180px;
+    height:35px;
+    margin-top: 60px;
+    margin-left: 400px;
+    background-color:#ddb5e6;
+    font-size: 18px;
+    cursor: pointer;
+}
+#result{
+    font-size: 25px;
+    padding-left: 19px;
+}
+.extra-buttons button{
+    width: 180px;
+    height:35px;
+    background-color:#ddb5e6;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 1280px;
+    margin-top: 8px;
+    border-radius: 3px;
+}

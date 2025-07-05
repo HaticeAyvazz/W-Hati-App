@@ -1,0 +1,39 @@
+.back-picture{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    z-index:-1;
+}
+#location-info{
+    width: 200px;
+    height: 150px;
+    background-color: #E2C4E3;
+    border: #ca7eca 4px solid;
+    margin-left:20px;
+    margin-top: 20px;
+}
+#location-box{
+    width: 1000px;
+    height: 420px;
+    margin-top: -185px;
+    margin-left: 300px;
+    border-radius: 10px;
+    background-color: #E2C4E3;
+    border: #ca7eca 4px solid;
+}
+.back-btn{
+    width: 60px;
+    height: 30px;
+    background-color: #ca7eca;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left:20px;
+    cursor: pointer;
+}
+.back-btn:hover{
+    background-color: white;
+}

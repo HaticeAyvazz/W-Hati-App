@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="locationstyle.css">
+    <title>See Location</title>
+</head>
+<body>
+
+   <div class="back">
+       <img src="backfoto.jpeg" class="back-picture">
+       <div id="location-info">
+       </div>
+       <a href="home.html"><button class="back-btn">Geri</button></a>
+  <div id="location-box">
+      <iframe id="map" width="100%" height="420" style="border:0;" loading="lazy"></iframe>
+  </div>
+   </div>
+
+<script>
+    const params=new URLSearchParams(window.location.search);
+    const city=params.get("city");
+    const lat=params.get("lat");
+    const lon=params.get("lon");
+
+    document.getElementById("location-info").innerHTML = `
+           <p><b>📍 Şehir:</b> ${city}</p>
+           <p><b>🌐 Enlem:</b> ${lat}</p>
+           <p><b>🌐 Boylam:</b> ${lon}</p>
+        `;
+
+    document.getElementById("map").src = `https://www.google.com/maps?q=${lat},${lon}&hl=tr&z=12&output=embed`;
+
+
+</script>
+
+</body>
+</html>
